@@ -14,7 +14,7 @@ const RegisterPage = () => {
 
     try {
       // Send the request to your backend API
-      const response = await axios.post('http://localhost:5000/api/users/register', {
+      const response = await axios.post('https://expense-tracker-api-bohr.onrender.com/api/users/register', {
         email,
         password
       });

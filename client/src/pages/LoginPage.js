@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     try {
       // Send the request to your backend API
-      const response = await axios.post('http://localhost:5000/api/users/login', {
+      const response = await axios.post('https://expense-tracker-api-bohr.onrender.com/api/users/login', {
         email,
         password
       });

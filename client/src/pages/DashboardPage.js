@@ -13,7 +13,7 @@ const DashboardPage = () => {
   const navigate = useNavigate();
 
   const api = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL: 'https://expense-tracker-api-bohr.onrender.com/api',
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`,
     },
