@@ -11,7 +11,9 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors()); // Allows cross-origin requests (from your React app)
+app.use(cors({
+  origin: "https://expense-tracker-web-nu.vercel.app"
+}));
 app.use(express.json()); // Allows the server to accept JSON in the request body
 app.use('/api/users', require('./routes/users'));
 app.use('/api/transactions', require('./routes/transactions'));
